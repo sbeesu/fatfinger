@@ -18,7 +18,7 @@ public class ValidationPinService {
 
 	}
 
-	private static String validatePin(String[] userInput, String[] storedInput) {
+	public String validatePin(String[] userInput, String[] storedInput) {
 
 		for (int i = 0; i < 4; i++) {
 
@@ -33,13 +33,13 @@ public class ValidationPinService {
 		return "VALID";
 	}
 
-	private static boolean checkCharaterHasAlternativeKey(String userInputDigit, String storedInputDigit) {
+	public boolean checkTwoCharsAlike(String userInputDigit, String storedInputDigit) {
 
 		return userInputDigit.equals(storedInputDigit);
 
 	}
 
-	private static boolean checkTwoCharsAlike(String userInputDigit, String storedInputDigit) {
+	public boolean checkCharaterHasAlternativeKey(String userInputDigit, String storedInputDigit) {
 
 		Map<String, List<String>> alternativePins = InputKeyMappingService.getAdjacencyKeystrokeMap();
 		return alternativePins.get(storedInputDigit).contains(userInputDigit);
