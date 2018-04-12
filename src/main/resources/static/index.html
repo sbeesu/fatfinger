@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fat Finger Keypad</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Coding Exercise - Fat Finger</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-9">
+						<h3 style="text-align: center">Please enter the PIN..</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-8">
+						<p class="keyContent"></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="row">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6">
+						<div class="form-group">
+
+							<h3 for="storedPin">Stored PIN:</h3>
+							<input type="text" class="form-control" id="storedPin"
+								maxlength="4" pattern="[0-9]{4}" value="4873" required>
+							<br>
+
+							<div class="alert-sm alert-warning storedPin-warning">
+								Please Enter 4 digit PIN.</div>
+						</div>
+
+					</div>
+					<div class="col-sm-3"></div>
+
+				</div>
+			</div>
+			<div class="col-sm-4 keypad">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-3">
+						<button class="myButton" id="1">1</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="myButton" id="2">2</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="myButton" id="3">3</button>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-3">
+						<button class="myButton" id="4">4</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="myButton" id="5">5</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="myButton" id="6">6</button>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-3">
+						<button class="myButton" id="7">7</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="myButton" id="8">8</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="myButton" id="9">9</button>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3">
+						<button class="myButton" id="0">0</button>
+					</div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-1"></div>
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+				<p class="pinEntered"></p>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<script src="js/app.js"></script>
+</body>
+</html>
