@@ -8,6 +8,13 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
+/**
+* The InputKeyMappingService program serves the data 
+* for the validation to the "ValidationPinService" Service.
+*
+* @author  Shiva Beesu
+*/
+
 @Service
 public class InputKeyMappingService {
 
