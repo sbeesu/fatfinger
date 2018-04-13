@@ -6,6 +6,14 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+* The ValidationPinService program implements an application that
+* serves the validation controller request. It mainly validates the 
+* UserInput against the Stored Input and sends the response back.
+*
+* @author  Shiva Beesu
+*/
+
 @Service
 public class ValidationPinService {
 
